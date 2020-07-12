@@ -1,0 +1,57 @@
+body {
+    font-family: 'Indie Flower', cursive;
+}
+h1, h2 {
+    border-bottom: 5px solid darkseagreen;
+    /*border: 5px dotted red;*/
+}
+.left-column {
+    border-right: 2px solid #bbb;
+}
+ul {
+    border-left: 3px solid cadetblue;
+}
+li:first-child + li {
+    text-shadow: -2px 2px 3px #ff2d95;
+}
+p > * {
+
+}
+p > *:hover {
+    background: #ff2d95;
+}
+p > i > b:hover {
+    background: white;
+}
+p > b {
+    background-color: yellow;
+}
+b {
+    border: 1px solid blue;
+}
+i {
+    border: 4px solid green;
+}
+div {
+    width: 45%;
+    margin-top: 25px;
+    padding-top: 25px;
+    /*border: 2px solid green;*/
+}
+.left-column {
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    padding-right: 10px;
+}
+.right-column {
+    margin-right: 25px;
+    float: right;
+}
+.footer {
+    margin-top: 25px;
+    padding-top: 0.5ex;
+    border-top: 1px solid gray;
+    font-style: italic;
+    clear: both;
+}

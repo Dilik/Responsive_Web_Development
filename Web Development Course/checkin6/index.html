@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/font.css" rel="stylesheet"/>
+    <title>check_in_6</title>
+</head>
+<body>
+<div class="col-md-4">
+
+    <p class="font"> Please Enter Your Name </p>
+        <input class="form-control" type="text" placeholder="Your Name" name="name">
+
+    <p class="font"> Select Your Favorite Dog Breed </p>
+        <select class="form-control" name="values">
+            <option value="1"></option>
+            <option value="2">Labrador Retriever</option>
+            <option value="3">Yorkshire Terrier</option>
+            <option value="4">Bulldog</option>
+            <option value="5">Husky</option>
+            <option value="6">Boxer</option>
+            <option value="7">Pug</option>
+            <option value="8">German Shepherd</option>
+    </select>
+    <p id="result" class="color"></p>
+    <button type="button" class="btn btn-primary" value="submit"
+            onclick="result()"> Result </button>
+
+</div>
+
+<script src="js/dogbreed.js"></script>
+</body>
+</html>

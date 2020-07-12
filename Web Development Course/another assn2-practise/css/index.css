@@ -1,0 +1,16 @@
+b:hover{
+    background-color: greenyellow;
+    text-shadow: 2px 2px 8px #adadad;
+}
+b{
+    text-shadow: 2px 2px 8px #adadad;
+}
+
+h1{
+    text-shadow: 3px 3px 8px #adadad;
+}
+p#welcome{
+    font-size: 40px;
+    text-shadow: 2px 2px 8px #adadad;
+    text-align: center;
+}

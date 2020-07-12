@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+      <label class="control-label" for="name">Name: </label>
+      <input onkeyup="showMe()" id="name" class="form-control">
+
+      <label class="control-label" for="food">Your favorite food:</label>
+      <select onchange="showMe()" id="food" name="food" class="form-control">
+          <option>Taco</option>
+          <option>Waffles</option>
+          <option>Pizza</option>
+          <option>Burgers</option>
+          <option>Wings</option>
+      </select>
+      <p id="output">Hello world.</p>
+      <input type="hidden" name="food" value="bbbbbbb">
+
+      <ul id="myNavs" class="nav nav-pills">
+          <li onclick="goto(0)" role="presentation" class="active"><a href="#">Home</a></li>
+          <li onclick="goto(1)" role="presentation"><a href="#">Profile</a></li>
+          <li onclick="goto(2)" role="presentation"><a href="#">Messages</a></li>
+      </ul>
+
+      <img id="myphoto" src="foo.png">
+  </div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="js/bootstrap.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>

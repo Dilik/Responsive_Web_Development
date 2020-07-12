@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>There are {{ numPeople }} people in the database.</h1>
+
+  <ul>
+      {% for p in people %}
+          <li>
+              <a href="/person/{{ p.id }}">
+                  {{ p.first_name }}
+                  <b>{{ p.last_name }}</b>
+              </a>
+          </li>
+      {% endfor %}
+  </ul>
+
+      <p>{{ answer }}</p>
+
+  <p>Blah blah blah.</p>
+
+{% endblock %}

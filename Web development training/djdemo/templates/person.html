@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ p.first_name }} {{ p.last_name }}</h1>
+
+{% if p.profile_image %}
+   <img class="profile" src="{{ p.profile_image.url }}" width="100">
+{% endif %}
+
+<p><b>Birth date: </b> {{  p.dob }}</p>
+
+<p>
+    {{  p.bio }}
+</p>
+
+{% if pubs %}
+    <h2>Publications</h2>
+    <ul>
+    {% for x in pubs %}
+       <li>
+           {{ x.title }} ({{ x.year }}), {{ x.publisher }}.
+       </li>
+    {%  endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}
+
+
+{% block copyright %}
+  Copyright 2015 {{ p.first_name }} {{ p.last_name }}
+{% endblock %}
+

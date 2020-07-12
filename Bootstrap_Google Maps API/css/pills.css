@@ -1,0 +1,13 @@
+#map-canvas {
+    height: 313px;
+    width: 500px;
+}
+#head{
+    font-size: 30px;
+    color: darkblue;
+}
+#text{
+    font-size: 15px;
+    text-align: center;
+    color: darkslategrey;
+}

@@ -1,0 +1,23 @@
+{% extends 'bio.html' %}
+
+    <!-- Navigation -->
+{% block text-info %}{{ p }}{% endblock %}
+    <!-- Page Content -->
+{% block people_list %}
+    <div class="container">
+
+        <!-- Project One -->
+         {% for dep in depart %}
+        <div class="row">
+               <h3 class="text-center"> <a href="/bio/{{ dep.id }}"> {{ dep.first_name }} {{ dep.last_name }}</a></h3>
+        </div>
+        {% endfor %}
+        <div class="row">
+            <div class="col-md-8">
+
+                <a class="btn btn-primary" href="/"><span class="glyphicon glyphicon-arrow-left"></span></a>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

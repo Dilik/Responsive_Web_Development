@@ -1,0 +1,33 @@
+{% extends "index.html" %}
+
+{% block title %}
+    {% block text-info %}
+        {{ bio }}
+    {% endblock %}
+{% endblock %}
+
+{% block empty %}{% endblock %}
+    <!-- Page Content -->
+{% block content %}
+    {% block people_list %}
+    <div class="container">
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-5">
+                <a>
+
+                </a>{% if bio.image %}
+                    <img class="img-thumbnail" src="{{ bio.image }}" width="300">
+                    {% endif %}
+            </div>
+            <div>
+                <h3>{{ bio.first_name }} {{ bio.last_name }}</h3>
+                <p>{{ bio.DOB }}</p>
+                <p>{{ bio.bio }}</p>
+                <a class="btn btn-primary" href="/department/{{ bio.person_depart_id }}"><span class="glyphicon glyphicon-arrow-left"></span></a>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,14 @@
+mark,
+ .mark{
+     color: lightsalmon;
+ }
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: darkslategrey;
+    padding-bottom: 10px;
+}
+ul{
+    border-bottom: thin solid darkslategray;
+    padding-bottom:15px;
+}

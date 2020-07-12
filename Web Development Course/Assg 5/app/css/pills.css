@@ -1,0 +1,20 @@
+.nav-tabs{
+    margin-top: 20px;
+    width: 100%;
+}
+#size{
+    width: 50%;
+}
+#map-canvas {
+    height: 450px;
+    width: 650px;
+}
+#head{
+    font-size: 30px;
+    color: darkblue;
+}
+#text{
+    font-size: 15px;
+    text-align: center;
+    color: darkslategrey;
+}

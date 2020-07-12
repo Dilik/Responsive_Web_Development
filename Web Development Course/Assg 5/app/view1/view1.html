@@ -1,0 +1,61 @@
+<h1> Class Task List</h1>
+<table class="table table-stripped table-hover" id="narrow">
+    <tr>
+        <th>Done</th>
+        <th ng-click="sort('title', false)">Task Title
+        <span class="glyphicon glyphicon-sort-by-alphabet" ng-show="sortList=='title'"></span>
+        </th>
+        <th ng-click="sort('priority', false)">Priority
+            <span class="glyphicon glyphicon-sort-by-alphabet" ng-show="sortList=='priority'"></span>
+        </th>
+        <th ng-click="sort('date1', false)">Deadline
+            <span class="glyphicon glyphicon-sort-by-order" ng-show="sortList=='date1'"></span>
+        </th>
+        <th>Modify</th>
+    </tr>
+    <tr ng-repeat="task in TaskList">
+        <th><label><input type="checkbox" ng-model="task.selected"></label></th>
+        <th><label><input type="text" id="editTitle{{$index}}" ng-model="task.title" hidden="hidden" autocomplete="off">
+            <span id="title{{$index}}">{{task.title}}</span>
+            </label></th>
+        <th>
+        <label>
+            <select id="editPriority{{$index}}" ng-model="task.priority" hidden="hidden">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <span id="priority{{$index}}">{{task.priority}}</span>
+        </label>
+        </th>
+        <th><label><input type="date" id="editDate{{$index}}" ng-model="task.date1" hidden="hidden">
+            <span id="date1{{$index}}">{{task.date1}}</span></label></th>
+        <th>
+            <label id="edit{{$index}}"><span class="glyphicon glyphicon-pencil" ng-click="edit($index)"></span></label>
+            <label id="remove{{$index}}"><span class="glyphicon glyphicon-trash" ng-click="remove($index)"></span></label>
+            <label id="save{{$index}}" hidden="hidden"><span class="glyphicon glyphicon-ok-circle" ng-click="save($index)" ></span></label>
+            <label id="cancel{{$index}}" hidden="hidden"><span class="glyphicon glyphicon-ban-circle" ng-click="cancel($index)"></span></label>
+        </th>
+    </tr>
+        <button type="button" class="btn btn-group-vertical btn-sm" ng-click="removeTask($index)">
+            <span class="glyphicon glyphicon-trash"></span> Remove Selected
+        </button>
+</table>
+<div class="container">
+    <div class="col-md-6">
+        <form ng-submit="AddToList()">
+            <input placeholder="Enter task" type="text" ng-model="task" class="form-control-static" id="input">
+            <label>
+                <select class="form-control" ng-model="pty1">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                </select>
+            </label>
+            <label><input type="date" ng-model="dp"></label>
+            <button ng-click="AddToList()" type="button" class="btn btn-primary btn-lg" id="btn-color">
+            <span class="glyphicon glyphicon-save" aria-hidden="true"></span> Save
+       </button>
+        </form>
+    </div>
+</div>

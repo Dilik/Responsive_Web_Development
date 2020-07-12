@@ -1,0 +1,49 @@
+h1,h2{
+    padding-top: 12px;
+    border-bottom: 7px solid blueviolet;
+}
+b{
+    border: 1px solid red;
+}
+p>i{
+    border: 2px solid green;
+}
+div{
+    width: 40%;
+    margin-top: 25px;
+    padding-top: 25px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+.right-colm{
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    border-left: 2px solid lightgray;
+    padding: 5px;
+    padding-left: 10px;
+}
+.left-colm{
+    float: left;
+    margin-left: 25px;
+    border-right: 2px solid lightgray
+}
+.footer {
+    border-top: 2px solid lightblue;
+    padding-top: 0.3px;
+    clear: both;
+    font-style: italic;
+}
+li:nth-child(2){
+    text-shadow: 2px 2px 8px #CC0099;
+}
+ul>li:hover{
+    background-color: aqua;
+    width: 20%;
+}
+p>i>b:hover{
+    background-color: red;
+}
+p>b:hover{
+    background-color: yellow;
+}

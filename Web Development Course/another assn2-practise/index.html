@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<!--suppress HtmlUnknownTag, HtmlUnknownTag -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/index.css" rel="stylesheet"/>
+    <link href="css/exceeded.css" rel="stylesheet"/>
+    <title><h1>Uzbek Cuisine Recipes</h1></title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+    <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Uzbek Cuisine</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"> Main </a></li>
+                        <li><a href="recipes.html"> Recipes </a></li>
+                        <li><a href="contacts.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</div>
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<p id="welcome"> Welcome to Uzbek Cuisine Recipes</p>
+    <p align="center">
+        <!--<input placeholder="Your Name" class="form-control" type="text" name="username">-->
+        <!--<button class="btn btn-primary"-->
+                          <!--onclick="clickHandler()">-->
+        <!--Smash Me-->
+    <!--</button></p>-->
+
+<textarea style="width: 350px; height: 150px; padding-bottom: 20px" onkeydown = "countChar()" class="form-control" id="tweet" name="tweet" placeholder="What kind of recipe are you looking for?"></textarea>
+     <button class="btn btn-primary"
+                          onclick="clickHandler()">
+    tweet
+</button></p>
+    <p class="remain"><span id="chars">140</span> Characters remaining </p>
+
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="img-circle" src="image/creator.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2 > Creator</h2>
+            <p>Dilmurod Makhamadaliev, born in Tashkent,Uzbekistan in 1880. Creator of Uzbek Cuisine website since 1917. Currently lives in United States and publishes his most delicious uzbek cuisine on his website and spreads the most secret recipes around the world. </p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="img-circle" src="image/historical.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>Historical Background</h2>
+            <p>Russia conquered the territory of present-day Uzbekistan in the late 19th century. Stiff resistance to the Red Army after the Bolshevik Revolution was eventually suppressed and a socialist republic established in 1924.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <img class="img-circle" src="image/culture.jpg" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+            <h2>Cultural Background</h2>
+            <p>The culture of Uzbekistan has a wide mix of ethnic groups and cultures, with the Uzbeks being the majority group. In 1995, about 71% of Uzbekistan's population was Uzbek.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading"> <b> Uzbek Plov </b> <span class="text-muted">(Lamb and Rice Pilaf)</span></h2>
+            <p class="lead">4 cups long grain rice, I use Basmati, which is sold in burlap sacks at health food stores or farmer markets
+                4 large carrots shopping list
+                4 large onions
+                2 lbs lamb meat - preferably leg or shoulder with some fat on it
+                1/4 cup melted lamb fat or vegetable oil
+                8 cups boiling water
+                3 heaping tbsp coarse salt
+                2 tsp black pepper
+                3 tbsp ground coriander
+                3 tbsp ground cumin
+                1/2 tbsp paprika
+                1/2 tsp turmeric or a pinch of saffron for color
+                1/2 tbsp tarragon
+                1/4 cup dried barberries (optional)
+                1 large head of garlic, un-peeled</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="image/plov.jpg" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="image/shashlik.jpg" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-7">
+            <h2 class="featurette-heading"><b>Uzbek Shashlik</b> <span class="text-muted"> (Shish Kebab) </span></h2>
+            <p class="lead">1 kg of meat (lamb or beef)
+                2 big onions, peeled and sliced
+                1 tbsp of coriander
+                1 tbsp of cumin seeds
+                1tbsp of salt
+                1tsp of chili powder
+                1 tsp of ground pepper
+                500 ml of sparkling water
+                Cut meat in 15-20 gram pieces. Put in a deep bowl and season with spices and onion, finely mash with hands. Add in sparkling water, cover with flat dish, put some weight on it and put in cold dark place for at least 5 hours or in a fridge for overnight. (If the weather is too hot, put your meat in the fridge).</p>
+
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading"> <b>Manti </b><span class="text-muted"> (Big Dumplings) </span></h2>
+            <p class="lead"> Ingredients for the dough:
+
+                2 1/2 cups of all purpose flour+
+                1 egg
+                1 tsp salt
+                1 cup warm water+
+                Ingredients for the meat filling:
+
+                About 2 lbs of beef or lamb (higher fat preferred)
+                4 medium onions
+                1/2 tsp ground black pepper
+                1 tsp cumin
+                1 tsp salt
+                1 medium potato (optional)
+                2 Tbsp olive or canola oil (optional if you are using fatty meat)</p>
+            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-responsive" src="image/manti.jpg" alt="Generic placeholder image">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2015 Copyright, Uzbek Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+
+</div>
+
+<script src="javascript/main.js"></script>
+
+</body>
+</html>

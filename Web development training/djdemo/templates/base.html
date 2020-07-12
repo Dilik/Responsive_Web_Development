@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img.profile {
+            float: left;
+            border: 2px solid #aaa;
+            margin-right: 2em;
+        }
+        header {
+            border-bottom: 4px solid red;
+        }
+        footer {
+            border-top: 4px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <header>My site!</header>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer>
+        {% block copyright %}
+            Copyright 2015 CL
+        {% endblock %}
+    </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.exceeded{
+    color: darkred;
+    text-align: center;
+}
+.remain{
+    text-align: center;
+    font-size: large;
+}
+.btn{
+    padding: 24px 13px;
+}
